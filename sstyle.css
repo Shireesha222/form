@@ -1,0 +1,72 @@
+body{
+    background-color:rgb(23, 196, 196);
+}
+form{
+    width: 500px;;
+}
+#head:hover{
+
+background: #7f26a6;
+background: linear-gradient(90deg, rgb(196, 18, 83) 0%, rgb(59, 25, 208) 50%, rgb(23, 197, 55) 100%);
+background-clip: text;
+color: transparent;
+}
+fieldset{
+    border: dotted green;
+    border-radius: 10px;
+}
+input:required{
+    border: dotted rgb(27, 190, 70);
+}
+input:optional{
+    border: dotted rgb(210, 23, 145);
+    border-radius: 10px;
+}
+input:read-only{
+    background-color: rgb(255, 179, 0);
+    color: red;
+}
+input[type="radio"]:checked{
+    height: 20px;
+    width:20px;
+}
+input[type="radio"]:checked+ label{
+    color: rgb(8, 209, 75);
+}
+input[type="submit"]{
+    border: rgb(183, 14, 14);
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+select{
+    background-color: rgb(179, 49, 135);
+    cursor: pointer;
+}
+input:focus{
+    background-color: rgb(17, 176, 54);
+}
+input[type="Reset"]{
+    cursor: pointer;
+}
+input[type="text"]+span{
+    display: none;
+
+}
+input[type="text"]:hover+span{
+    display: inline;
+
+}
+img{
+    display: none;
+}
+input[type="email"]:focus:valid ~ img#valid{
+    display: inline;
+    height: 20px;
+    width: 20px;
+}
+input[type="email"]:focus:invalid ~ img#invalid{
+    display: inline;
+    height: 20px;
+    width: 20px;
+}
